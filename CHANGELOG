@@ -1,0 +1,10 @@
+1.02 Joachim Schiele, js@lastlog.de
+  * Main repository moved to: https://github.com/qknight/clean 
+  * Fixed PHP tags
+  * Fixed broken CSS
+  * License change from '' to 'cc-by-sa/3.0' on 'Kevin Hughes' request:
+    This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License:
+    http://creativecommons.org/licenses/by-sa/3.0/
+
+1.01 Kevin Hughes, kev@kevcom.com
+  initial release

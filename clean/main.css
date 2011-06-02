@@ -927,6 +927,7 @@ span.searchmatch {
         background-color: #EFEFEF;
         padding: 5px;
         padding-left: 7px;
+        display: none;
 }
 
 #catlinks p {

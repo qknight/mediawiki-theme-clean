@@ -1,9 +1,13 @@
 <?php
 /**
  * Clean, a MediaWiki skin
- * Version 1.01
+ * Version 1.02
  * Made for MediaWiki 1.5
  * By Kevin Hughes, kev@kevcom.com, 11/17/2005
+ * see CHANGELOG
+ *
+ * This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License:
+ * http://creativecommons.org/licenses/by-sa/3.0/
  *
  * Local settings that affect this skin (in LocalSettings.php):
  * $wgDefaultSkin       change to "clean" to use as your default skin
@@ -29,7 +33,7 @@ require_once('includes/SkinTemplate.php');
  * @subpackage Skins
  */
 class SkinClean extends SkinTemplate {
-	function initPage( &$out ) {
+	function initPage( OutputPage $out ) {
 		SkinTemplate::initPage( $out );
 		$this->skinname  = 'clean';
 		$this->stylename = 'clean';
@@ -264,7 +268,7 @@ class CleanTemplate extends QuickTemplate {
 <div class="editMiniItem"><?php echo $deleteLink; ?></div>
 <div class="editMiniItem"><?php echo $moveLink; ?></div>
 <div class="editMiniItem"><?php echo $watchLink; ?></div>
-<?
+<?php
 	}
 ?>
 </div>
