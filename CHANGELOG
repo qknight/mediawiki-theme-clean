@@ -2,6 +2,7 @@
   * Main repository moved to: https://github.com/qknight/clean 
   * Fixed PHP tags
   * Fixed broken CSS
+  * Tested to work with php-5.2.14 and php-5.3.6
   * License change from '' to 'cc-by-sa/3.0' on 'Kevin Hughes' request:
     This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License:
     http://creativecommons.org/licenses/by-sa/3.0/
