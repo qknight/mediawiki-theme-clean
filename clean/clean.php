@@ -1,8 +1,8 @@
 <?php
 /**
  * Clean, a MediaWiki skin
- * Version 1.02
- * Made for MediaWiki 1.5
+ * Version 1.24.2-1
+ * Made for MediaWiki 1.24.2
  * By Kevin Hughes, kev@kevcom.com, 11/17/2005
  * see CHANGELOG
  *
@@ -22,11 +22,24 @@
  * @subpackage Skins
  */
 
+$GLOBALS['wgExtensionCredits']['skin'][] = array(
+    'path' => __FILE__,
+    'name' => 'clean',
+    'namemsg' => 'skinname-clean',
+    'descriptionmsg' => 'clean-skin-desc',
+    'url' => 'https://github.com/qknight/mediawiki-theme-clean',
+    'author' => array( 'Kevin Huges', 'Joachim Schiele' ),
+    'license-name' => 'CC-BY-SA-3.0',
+);
+
+// Register skin
+$GLOBALS['wgValidSkinNames']['clean'] = 'clean';
+
+// Register config
+$GLOBALS['wgConfigRegistry']['clean'] = 'GlobalVarConfig::newInstance';
+
 if(!defined('MEDIAWIKI'))
 	die();
-
-/** */
-require_once('includes/SkinTemplate.php');
 
 /**
  * @package MediaWiki
